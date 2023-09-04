@@ -9,5 +9,5 @@ public abstract class Obstacle {
         this.value = value;
     }
 
-    public abstract boolean overcome(Participant participant);
+    public abstract boolean overcome(Participant Participant);
 }
