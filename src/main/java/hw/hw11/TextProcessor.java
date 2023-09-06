@@ -34,7 +34,7 @@ public class TextProcessor {
         return uniqueList;
     }
 
-       public static void calcOccurrence(List<String> wordList) {
+       public static List<String> calcOccurrence(List<String> wordList) {
         Map<String, Integer> occurrenceMap = new HashMap<>();
         for (String word : wordList) {
             occurrenceMap.put(word, occurrenceMap.getOrDefault(word, 0) + 1);
