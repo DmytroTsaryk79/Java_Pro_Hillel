@@ -33,6 +33,6 @@ public class Phonebook {
                 foundRecords.add(record);
             }
         }
-        return foundRecords.isEmpty() ? null : foundRecords;
+        return foundRecords;
     }
 }
