@@ -36,8 +36,7 @@ target/
 # Unit test reports
 TEST*.xml
 
-# Package files
-*.jar
+
 
 # Compiled Java class files
 *.class
