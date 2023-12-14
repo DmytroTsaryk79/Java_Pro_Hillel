@@ -21,7 +21,6 @@ public class ArrayInitializer {
         thread2.start();
 
         try {
-            // Очікуємо завершення обох потоків
             thread1.join();
             thread2.join();
         } catch (InterruptedException e) {
@@ -39,7 +38,6 @@ public class ArrayInitializer {
     }
 
     public static void main(String[] args) {
-        // Створюємо масив та заповнюємо його однаковим значенням
         int arraySize = 10;
         double[] array = new double[arraySize];
         double initialValue = 1.0;
@@ -48,10 +46,8 @@ public class ArrayInitializer {
             array[i] = initialValue;
         }
 
-        // Викликаємо init() для ініціалізації масиву
         init(array);
 
-        // Виводимо отриманий масив
         for (double value : array) {
             System.out.println(value);
         }
